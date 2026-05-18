@@ -1,0 +1,25 @@
+@import './tokens.css';
+@import './reset.css';
+
+html {
+  font-family: var(--font-body);
+  color: var(--ink-body);
+  background: var(--surface-base);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-size: var(--t-body-md);
+  line-height: var(--lh-body);
+  letter-spacing: var(--ls-body);
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: var(--w-semibold);
+  color: var(--ink-strong);
+  margin: 0;
+}

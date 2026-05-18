@@ -1,0 +1,134 @@
+/* =========================================================================
+   Instructor Assistant — Design Tokens (Spectrum direction)
+   Change a value here and it cascades through the entire app.
+   ========================================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap');
+
+:root {
+  /* ─── Surfaces ─────────────────────────────────────────────────────────── */
+  --surface-base:        #FFFFFF;
+  --surface-raised:      #FFFFFF;
+  --surface-sunken:      #F7F6F3;
+  --surface-hover:       #F1F1EE;
+  --surface-active:      #E9E9E5;
+  --surface-overlay:     rgba(15, 15, 15, 0.42);
+
+  /* ─── Ink ──────────────────────────────────────────────────────────────── */
+  --ink-strong:          #1A1A19;
+  --ink-body:            #37352F;
+  --ink-muted:           #787774;
+  --ink-subtle:          #B3B0A8;
+  --ink-inverse:         #FFFFFF;
+
+  /* ─── Lines ────────────────────────────────────────────────────────────── */
+  --line-soft:           #ECEAE4;
+  --line-strong:         #D9D6CD;
+
+  /* ─── Brand accent ─ violet (reserved for AI moments) ──────────────────── */
+  --accent-50:           #F5F1FF;
+  --accent-100:          #E9E0FF;
+  --accent-300:          #B9A3FF;
+  --accent-500:          #7C5CFC;
+  --accent-600:          #6A47F5;
+  --accent-700:          #5430D4;
+  --accent-on:           #FFFFFF;
+
+  /* ─── Spectrum — 10 named colors (text / soft-bg / solid) ──────────────── */
+  --c-gray-text:    #6F6D66;   --c-gray-bg:    #F1F1EE;   --c-gray-solid:    #8A8780;
+  --c-brown-text:   #93573A;   --c-brown-bg:   #F4ECE5;   --c-brown-solid:   #B8714A;
+  --c-orange-text:  #C2570E;   --c-orange-bg:  #FBEAD7;   --c-orange-solid:  #F08A2C;
+  --c-yellow-text:  #A87617;   --c-yellow-bg:  #FBF1CF;   --c-yellow-solid:  #E9B53D;
+  --c-green-text:   #0F7B5C;   --c-green-bg:   #DBEEE5;   --c-green-solid:   #21A879;
+  --c-teal-text:    #0E7185;   --c-teal-bg:    #D9ECF1;   --c-teal-solid:    #2AA9C3;
+  --c-blue-text:    #145CC2;   --c-blue-bg:    #DDE6F8;   --c-blue-solid:    #3B82F6;
+  --c-purple-text:  #6A3CC8;   --c-purple-bg:  #EBE2F8;   --c-purple-solid:  #9067E3;
+  --c-pink-text:    #B4276F;   --c-pink-bg:    #F8DEEB;   --c-pink-solid:    #E15B9D;
+  --c-red-text:     #C92A2A;   --c-red-bg:     #FBE0DD;   --c-red-solid:     #EF4444;
+
+  /* ─── Semantic ─────────────────────────────────────────────────────────── */
+  --success-50:    var(--c-green-bg);
+  --success-500:   var(--c-green-solid);
+  --success-700:   var(--c-green-text);
+  --warning-50:    var(--c-yellow-bg);
+  --warning-500:   var(--c-yellow-solid);
+  --warning-700:   var(--c-yellow-text);
+  --danger-50:     var(--c-red-bg);
+  --danger-500:    var(--c-red-solid);
+  --danger-700:    var(--c-red-text);
+  --info-50:       var(--c-blue-bg);
+  --info-500:      var(--c-blue-solid);
+  --info-700:      var(--c-blue-text);
+
+  --ai-50:         var(--accent-50);
+  --ai-100:        var(--accent-100);
+  --ai-500:        var(--accent-500);
+  --ai-700:        var(--accent-700);
+
+  /* ─── Type ─────────────────────────────────────────────────────────────── */
+  --font-display:  'Geist', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-body:     'Geist', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono:     'Geist Mono', 'SF Mono', Menlo, Consolas, monospace;
+
+  --t-display-xl:  clamp(40px, 4vw, 56px);
+  --t-display-lg:  clamp(30px, 3vw, 40px);
+  --t-display-md:  24px;
+  --t-display-sm:  20px;
+  --t-body-lg:     16px;
+  --t-body-md:     14px;
+  --t-body-sm:     13px;
+  --t-body-xs:     12px;
+
+  --w-regular:     400;
+  --w-medium:      500;
+  --w-semibold:    600;
+  --w-bold:        700;
+
+  --lh-display:    1.12;
+  --lh-body:       1.55;
+  --lh-tight:      1.25;
+
+  --ls-display:    -0.025em;
+  --ls-display-md: -0.015em;
+  --ls-body:       -0.003em;
+  --ls-smallcaps:  0.04em;
+
+  /* ─── Radii ────────────────────────────────────────────────────────────── */
+  --radius-xs:     4px;
+  --radius-sm:     6px;
+  --radius-md:     8px;
+  --radius-lg:     12px;
+  --radius-xl:     16px;
+  --radius-pill:   9999px;
+
+  /* ─── Spacing (8px grid) ───────────────────────────────────────────────── */
+  --space-0:       0;
+  --space-1:       4px;
+  --space-2:       8px;
+  --space-3:       12px;
+  --space-4:       16px;
+  --space-5:       20px;
+  --space-6:       24px;
+  --space-7:       32px;
+  --space-8:       40px;
+  --space-9:       48px;
+  --space-10:      64px;
+  --space-11:      80px;
+  --space-12:      96px;
+
+  /* ─── Elevation ────────────────────────────────────────────────────────── */
+  --shadow-1:      0 1px 2px rgba(15, 15, 15, 0.04);
+  --shadow-2:      0 6px 20px rgba(15, 15, 15, 0.08);
+  --shadow-3:      0 20px 60px rgba(15, 15, 15, 0.14);
+
+  /* ─── Motion ───────────────────────────────────────────────────────────── */
+  --ease-out:      cubic-bezier(0.2, 0.8, 0.2, 1);
+  --ease-in-out:   cubic-bezier(0.4, 0, 0.2, 1);
+  --dur-fast:      120ms;
+  --dur-base:      180ms;
+  --dur-slow:      260ms;
+
+  /* ─── App shell sizes ──────────────────────────────────────────────────── */
+  --shell-sidebar: 248px;
+  --shell-topbar:  56px;
+}
